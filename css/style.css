@@ -1,8 +1,40 @@
 .topmenu {
     display: flex;
     Justify-content: flex-end;
-    margin-top: 20px;
+
+    margin: 10px;
+    font-size: 13px;
+    font-family: arial, sans-serif;
+    padding-left: 30px;
+    padding-right: 30px;
+
 }
-.topmenuhref{
-    margin: 5px;
+
+.topmenuhref {
+    padding-right: 15px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000000de;
+}
+.topmenuhref:hover{
+    text-decoration: underline;
+}
+
+#s1 {
+    background: -webkit-linear-gradient(top, #4387fd, #4683ea);
+    border: 1px solid #4285f4;
+    color: white;
+    font-weight: bold;
+    line-height: 28px;
+    padding: 0 12px;
+    border-radius: 2px;
+    display: inline-block;
+    text-decoration: none;
+    cursor: default;
+}
+.logo {
+        padding-top: 109px;
+    display: flex;
+    Justify-content: center;
 }
