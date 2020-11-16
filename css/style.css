@@ -1,16 +1,25 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 98vh;
+    font-family: arial, sans-serif;
+}
+
 .topmenu {
     display: flex;
     Justify-content: flex-end;
+    align-content: flex-start;
     margin: 10px;
     font-size: 13px;
     font-family: arial, sans-serif;
     padding-left: 30px;
-    padding-right: 30px;
-
+    padding-right: 20px;
 }
 
+.content {}
+
 .topmenuhref {
-    padding-right: 15px;
+    padding-right: 20px;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -36,7 +45,7 @@
 
 .logo {
     padding-top: 109px;
-    padding-bottom: 47px;
+   margin-bottom: 47px;
     display: flex;
     Justify-content: center;
 }
@@ -51,6 +60,10 @@
     height: 44px;
     margin: auto;
     width: 582px;
+}
+.search:hover{
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
+    border-color: rgba(223,225,229,0);
 }
 
 .icosearch {
@@ -88,22 +101,25 @@
     width: 24px;
     line-height: 44px;
 }
-.mic{
-       margin-top: 11px;
-    margin-right: 22px; 
-     width: 24px;
+
+.mic {
+    margin-top: 11px;
+    margin-right: 22px;
+    width: 24px;
     cursor: pointer;
 }
-.forbutton{
+
+.forbutton {
     padding-top: 18px;
 }
-.forbutton button{
-background-image: -webkit-linear-gradient(top,#f8f9fa,#f8f9fa);
+
+.forbutton button {
+    background-image: -webkit-linear-gradient(top, #f8f9fa, #f8f9fa);
     background-color: #f8f9fa;
     border: 1px solid #f8f9fa;
     border-radius: 4px;
     color: #3c4043;
-    font-family: arial,sans-serif;
+    font-family: arial, sans-serif;
     font-size: 14px;
     margin: 11px 4px;
     padding: 0 16px;
@@ -114,7 +130,55 @@ background-image: -webkit-linear-gradient(top,#f8f9fa,#f8f9fa);
     cursor: pointer;
     user-select: none;
 }
+.forbutton button:hover{
+        box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    background-image: -webkit-linear-gradient(top,#f8f9fa,#f8f9fa);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
 .footer {
     display: flex;
     align-items: flex-end;
+    margin-top: auto;
+    background: #f2f2f2;
+    line-height: 40px;
+    min-width: 980px;
+    border-top: 1px solid #dadce0;
+    font-size: 15px;
+    flex-direction: column;
+
+}
+
+.country {
+    text-align: left;
+    color: rgba(0, 0, 0, .54);
+    padding-left: 27px;
+    margin-right: auto;
+
+}
+
+.about {
+    width: 100%;
+    border-top: 1px solid #dadce0;
+}
+
+.about a {
+    padding-right: 15px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, .54);
+}
+
+.about a:hover {
+        text-decoration: underline;
+}
+
+.aboutleft {
+    margin-left: 27px;
+    float: left;
+}
+
+.aboutright {
+    float: right;
 }
